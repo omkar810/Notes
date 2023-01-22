@@ -1,0 +1,1447 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@300&family=Patrick+Hand&family=Righteous&family=Shadows+Into+Light&family=Titillium+Web:wght@300&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="icon" href="./logo.png" type="image/icon type">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>NOTES</title>
+</head>
+
+<body>
+  <!-- start navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h2>Notes</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/Notes">SQL</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              JAVA
+            </a>
+            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/Notes/java.html">Core Java</a></li>
+              <li><a class="dropdown-item" href="/Notes/j2ee.html">J2EE</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Web Tech
+            </a>
+            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/Notes/webtech.html">HTML5</a></li>
+              <li><a class="dropdown-item" href="/Notes/webtech.html">CSS3</a></li>
+              <li><a class="dropdown-item" href="/Notes/webtech.html">JavaScript</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              JAVA Framework
+            </a>
+            <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/Notes/hibernate.html">Hibernate</a></li>
+              <li><a class="dropdown-item" href="/Notes/spring.html">Spring</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- start menu -->
+  <div class="subject">
+    <h3>SQL</h3>
+  </div>
+  <div class="heading">
+    <h4>Database</h4>
+    <hr>
+    <p><b>Data:</b></p>
+    <blockquote>
+      Data is an rawfact (real fact) which describes attribute of an entity.
+      Where attribute is a property and entity is an object.
+    </blockquote>
+    <p><b>Database:</b></p>
+    <blockquote>
+      Database is a place or container to store the data in systematic or organised manner.
+    </blockquote>
+    <p><b>Database operation:</b></p>
+    <blockquote>
+      There are four database operations:
+      <ul>
+        <li>Create</li>
+        <li>Read</li>
+        <li>Update</li>
+        <li>Delete</li>
+      </ul>
+      It is operation used to achieve the database. It is also known as <u>CRUD</u> operation.
+    </blockquote>
+  </div>
+  <div class="heading">
+    <h4>DBMS</h4>
+    <hr>
+    <p><b>What is DBMS?</b></p>
+    <ul>
+      <li>DBMS stands for <u>Database management system.</u></li>
+      <li>It is software used to manage and maintain the database.</li>
+      <li>It provides security and authorization.</li>
+      <li>query language is used to communicate with DBMS</li>
+      <li>there are four types of DBMS:
+        <ol>
+          <li>object oriented</li>
+          <li>rDBMS <u>(Relational Database management system)</u></li>
+          <li>network</li>
+          <li>hierarchical</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+  <div class="heading">
+    <h4>RDBMS</h4>
+    <hr>
+    <p><b>What is RDBMS?</b></p>
+    <ul>
+      <li>RDBMS stands for Relational database management system.</li>
+      <li>it is a software used to manage, maintain and store the data in the form of table.</li>
+      <li>if DBMS follows relational then it is known as RDBMS. IF DBMS follows EF CODD [<i>Father of RDBMS</i>] rule
+        then it is also known as RDBMS.</li>
+      <li>To communicate with RDBMS SQL <u>(Structured query language)</u> is used.</li>
+    </ul>
+    <p><b>SQL :</b></p>
+    <blockquote>it is a language used to communicate and manipulate the data in the form of table.
+    </blockquote>
+    <p><b>Relational model :</b></p>
+    <ul>
+      <li>it is given by EF CODD.</li>
+      <li>in that data is store in the form of table.</li>
+      <li>the table is store in the form of Metadata.</li>
+    </ul>
+    <p><b>Metadata :</b></p>
+    <blockquote>Metadata is data about data. Data contains sub-information of data.
+    </blockquote>
+    <p><b>EF CODD rules :</b></p>
+    <ul>
+      <li>data entered into the cell should be single value data or atomic data.</li>
+      <li>we can store the data in multiple tables and also establish connection through key attribute.</li>
+      <li>to validate the data entered into the cell data type and constraints are used.</li>
+      <li>data type is mandatory and constraint is optional.</li>
+    </ul>
+  </div>
+  <div class="heading">
+    <h4>Data types</h4>
+    <hr>
+    <strong>NOTE: Data is case sensitive and SQL is case insensitive language.</strong><br><br>
+    <p><b>What is data type?</b></p>
+    <blockquote>
+      data type is used to store what type of data to be store in particular memory allocation.
+    </blockquote>
+    <p><b>There are five types of data type:</b></p>
+    <ol>
+      <li>Char</li>
+      <li>varchar/Varchar2</li>
+      <li>number</li>
+      <li>date</li>
+      <li>large object</li>
+    </ol>
+    <p><b>1. Char :</b></p>
+    <blockquote>
+      It accept 'ABC', 'abc', 'b9', '@#$' everyone enclosed within single quotes.
+      <p>Syntax:</p><code> CHAR(SIZE); </code><br><br>
+      <p>Characteristics:</p>
+      <ul>
+        <li>when we are using the char data type we must mention the size.</li>
+        <li>it follows fixed length of memory allocation.</li>
+        <li>in char we can store upto 2000 characters.</li>
+      </ul>
+    </blockquote>
+    <p><b>2. Varchar :</b></p>
+    <blockquote>
+      It accept 'ABC', 'abc', 'b9', '@#$' everyone enclosed within single quotes.
+      <p>Syntax:</p><code> VARCHAR(SIZE); </code><br><br>
+      <p>Characteristics:</p>
+      <ul>
+        <li>when we are using the varchar data type we must mention the size.</li>
+        <li>it follows variable length of memory allocation.</li>
+        <li>in varchar we can store upto 2000 characters.</li>
+        <li>in varchar wastage memory taken by memory itself by default.</li>
+      </ul>
+    </blockquote>
+    <p><b>Varchar2 :</b></p>
+    <blockquote>
+      <p>Syntax:</p><code> VARCHAR2(SIZE);</code><br><br>
+      <p>Characteristics:</p>
+      <ul>
+        <li>it is updated version of varchar.</li>
+        <li>it is similar to varchar. The main diffrence is it can store upto 4000 characters.</li>
+      </ul>
+    </blockquote>
+    <p><b>3. Number :</b></p>
+    <blockquote>
+      It accept only numerical value. It takes two arguments, one is precision and other one is scale.
+      <p>Syntax:</p><code> NUMBER(precision, [scale]);</code><br><br>
+      <p>Characteristics:</p>
+      <ul>
+        <li>precision (Integer value) <ol>
+            <li>It is mandatory</li>
+            <li>Range: (1-38)</li>
+          </ol>
+        </li>
+        <li>scale (Decimal value) <ol>
+            <li>It is optional</li>
+            <li>Range: (0-127)</li>
+          </ol>
+        </li>
+      </ul>
+    </blockquote>
+    <p><b>4. Date :</b></p>
+    <blockquote>
+      In oracle we follows standard date formats. Those are 'DD-MON-YY' and 'DD-MON-YYYY'.
+      <p>Syntax:</p><code>DATE;</code>
+    </blockquote>
+    <p><b>5. Large object:</b></p>
+    <blockquote>
+      There are two types: <ol>
+        <li><span>Character large object </span>
+          <ul>
+            <li>In that we can store characters upto 4GB of size.</li>
+            <li>
+              <p>Syntax:</p><code>CLOB;</code>
+            </li>
+          </ul>
+        </li>
+        <li><span>Binary large object</span></li>
+        <ul>
+          <li>In that we can store media in binary format upto 4GB of size. E.g. Audios, Videos, Images, Documents.</li>
+          <li>
+            <p>Syntax:</p><code>BLOB;</code>
+          </li>
+        </ul>
+      </ol>
+    </blockquote>
+  </div>
+  <div class="heading">
+    <h4>Constraints</h4>
+    <hr>
+    <p><b>what is constraint?</b></p>
+    <blockquote>
+      it is rule or condition given for the column validation.
+    </blockquote>
+    <p><b>there are five types of constraints:</b></p>
+    <ol>
+      <li>unique</li>
+      <li>not Null</li>
+      <li>check</li>
+      <li>primary key</li>
+      <li>foreign key</li>
+    </ol>
+    <p><b>1. Unique:</b></p>
+    <blockquote>it is used to avoid duplicate and repeated value into the column.</blockquote>
+    <p><b>2. Not Null:</b></p>
+    <blockquote>it is used to avoid null values into the column.</blockquote>
+    <p><b>3. Check:</b></p>
+    <blockquote>it is used for extra validation purpose.</blockquote>
+    <p><b>4. Primary key:</b></p>
+    <blockquote>it is used to identify unique records from the table. <br><br>
+      <p>Characteristics:</p>
+      <ul>
+        <li>in table we can have only one primary key.</li>
+        <li>it should be unique.</li>
+        <li>it should be not null.</li>
+        <li>it should be combination of unique and not null.</li>
+        <li>it is present in parent table</li>
+        <li>it is not mandatory. It is design wise preferable.</li>
+      </ul>
+    </blockquote>
+    <p><b>5. Foreign key:</b></p>
+    <blockquote>it is used to establish the connection between two or more tables. <br><br>
+      <p>Characteristics:</p>
+      <ul>
+        <li>in table can have multiple foreign keys.</li>
+        <li>it can be unique.</li>
+        <li>it can be not null.</li>
+        <li>it cannot be combination of unique and not null.</li>
+        <li>it is present in child table.</li>
+        <li>it is also known as Referencial Integrity Constraint.</li>
+      </ul>
+    </blockquote>
+  </div>
+  <div class="heading">
+    <h4>SQL statements</h4>
+    <hr>
+    <ol>
+      <li>
+        <p><b>Data Definition Language (DDL):</b></p>
+        <ol type="A">
+          <li>Create</li>
+          <li>rename</li>
+          <li>alter</li>
+          <li>truncate</li>
+          <li>drop</li>
+        </ol>
+      </li><br>
+      <li>
+        <p><b>Data Manipulating Language (DML):</b></p>
+        <ol type="A">
+          <li>insert</li>
+          <li>update</li>
+          <li>delete</li>
+        </ol>
+      </li><br>
+      <li>
+        <p><b>Transaction Control Language (TCL):</b></p>
+        <ol type="A">
+          <li>commit</li>
+          <li>rollback</li>
+          <li>savepoint</li>
+        </ol>
+      </li><br>
+      <li>
+        <p><b>Data Control Language (DCL):</b></p>
+        <ol type="A">
+          <li>Grant</li>
+          <li>revoke</li>
+        </ol>
+      </li><br>
+      <li>
+        <p><b>Data Query Language (DQL):</b></p>
+        <ol type="A">
+          <li>Select</li>
+          <li>projection</li>
+          <li>selection</li>
+          <li>joins</li>
+        </ol>
+      </li>
+    </ol>
+  </div>
+  <div class="heading">
+    <h4>DQL</h4>
+    <hr>
+    <ol>
+      <li>
+        <p><b>Select:</b></p>
+        <blockquote>
+          <p>Definition:</p> Retrieval of data from the table which is present in database. <br><br>
+          <p>FROM Clause:</p>
+          <ul>
+            <li><span>Functionality:</span> Goes to the database search for the table_name and put it into execution
+              area.</li>
+            <li><span>syntax:</span><code> FROM table_name;</code></li>
+          </ul>
+        </blockquote>
+      </li>
+      <li>
+        <p><b>projection:</b></p>
+        <blockquote>
+          <p>Definition:</p> Retrieval of data from the table by providing column_name which is present in execution
+          area. <br><br>
+          <p>SELECT Clause:</p>
+          <ul>
+            <li><span>Functionality:</span> Goes to the table which is under execution area, search for the column_name
+              and display the output.</li>
+            <li><span>syntax:</span><code> SELECT * / [DISTINCT] / column_name / expression / [ALIASNAME];</code> </li>
+            <li><span>execution path:</span>
+              <ol>
+                <li>FROM</li>
+                <li>SELECT</li>
+              </ol>
+            </li>
+            <li><span>query syntax:</span></li><code>SELECT column_name <br> FROM table_name;</code><br><strong>NOTE:
+              Asterisk symbol ( * ) is wildcard character which is used to display all the the details. Using TAB we can
+              see which tables are
+              present in database. E.g. <code>SELECT * FROM TAB;</code> </strong><br><strong>DISTINCT is a keyword used
+              to display unique value at the time of execution. E.g.
+              <code>SELECT DISTINCT(column_name) FROM table_name;</code></strong> <br> <strong> ALIASNAME: It is a
+              alternate name given to column_name or expression at the time of execution.</strong>
+          </ul>
+        </blockquote>
+      </li>
+      <li>
+        <p><b>selection:</b></p>
+        <blockquote>
+          <p>Definition:</p> Retrieval of data from the table by providing both column_name and row_name which is
+          present in execution area. <br><br>
+          <p>WHERE Clause:</p>
+          <ul>
+            <li><span>Definition:</span> It is used to filter the condition row by row.</li>
+            <li><span>Functionality:</span> Goes to the table which is under execution area, search for the column_name
+              and filter the condition row by row.</li>
+            <li><span>Characteristics:</span>
+              <ol type="1">
+                <li>It is used to filter the condition.</li>
+                <li>It executes row by row.</li>
+                <li>it executes after from clause.</li>
+                <li>in where clause we can take multiple conditions.</li>
+                <li>in where clause we can't write multirow function.</li>
+              </ol>
+            </li>
+            <li><span>syntax:</span><code> WHERE condition;</code></li>
+            <li><span>execution path:</span>
+              <ol>
+                <li>FROM</li>
+                <li>WHERE</li>
+                <li>SELECT</li>
+              </ol>
+            </li>
+            <li><span>query syntax:</span></li>
+            <code>SELECT column_name <br> FROM table_name <br> WHERE condition;</code>
+          </ul>
+        </blockquote>
+      </li>
+    </ol>
+  </div>
+  <div class="sub-heading">
+    <h4>Operators</h4>
+    <hr>
+    <blockquote>
+      <p><b>there are seven types of operator:</b></p>
+      <ol>
+        <li>arithmetic operators ( + - / * )</li>
+        <li>relational operators ( > < != =)</li>
+        <li>comparison operators ( > >= <= < )</li>
+        <li>concatination operator ( || )</li>
+        <li>special operators ( IN , NOT IN , LIKE , NOT LIKE , BETWEEN , NOT BETWEEN , IS , IS NOT )</li>
+        <li>subquery operators ( ALL , ANY , EXIST , NOT EXIST )</li>
+        <li>logical operators ( AND , OR )</li>
+      </ol>
+      <p><b>Definitions:</b></p>
+      <ol>
+        <li><span>IN:</span> It is a multivalue operator. which takes single value in the LHS and multiple value in the
+          RHS.<br><code> Syntax: column_name IN (v1, v2...); </code><br>Here comma ( , ) works like OR operator.</li>
+        <li><span>NOT IN:</span> It is a multivalue operator. which takes single value in the LHS and multiple value in
+          the RHS.<br><code> Syntax: column_name NOT IN (v1, v2...); </code><br>Here comma ( , ) works like AND
+          operator.</li>
+        <li><span>IS:</span> It is a operator used to check null and not null values.<br> Syntax: column_name IS Not
+          Null;</li>
+        <li><span>LIKE:</span> It is a operator used to check 'Pattern
+          matching'.<br><code> Syntax: column_name LIKE 'Pattern';</code><br> There pattern has two wildcard characters:
+          <ol>
+            <li>Percentile ( % ): It takes any characters any number of time.</li>
+            <li>Underscore ( _ ): It takes any character only one time.</li>
+          </ol><strong>NOTE: If we want to find wildcard character in 'Pattern', then Escape ( ! ) character is use
+            before wildcard character. Escape character is used to convert wildcard character into special character.
+            E.g. If find starting with ( % ),the syntax will be <code>column_name LIKE '!%%' ESCAPE '!';</code></strong>
+        </li>
+        <li><span>BETWEEN:</span> It is a operator used to check ranges from lower value BETWEEN higher
+          value.<br><code> Syntax: column_name BETWEEN X AND Y;</code></li>
+        <li><span>NOT BETWEEN:</span> It is a operator used to check ranges from lower value NOT BETWEEN higher
+          value.<br><code> Syntax: column_name NOT BETWEEN X AND Y;</code></li>
+        <li><span>Concatination ( || ):</span> It is a operator used to merge two or more
+          strings.<br><code> Syntax: SELECT 'string' || column_name <br> FROM table_name;</code></li>
+        <li><span>Equal to (=) and Not equal to (!=)</span> It is a single value operator. Which takes single value in
+          LHS and single value in RHS. <br><code> Syntax: column_name = value; / column_name != value;</code></li>
+        <li><span>ALL:</span> It is a multivalue operator. which takes single value in the LHS and multiple value in the
+          RHS along with comparison
+          operator.<br><code> Syntax: SELECT column_name <br> FROM table_name <br> WHERE column_name > ALL (SELECT column_name FROM table_name <br> WHERE (condition)); </code><br>Here
+          ALL operator works like AND operator.</li>
+        <li><span>ANY:</span> It is a multivalue operator. which takes single value in the LHS and multiple value in the
+          RHS along with comparison
+          operator.<br><code> Syntax: SELECT column_name <br> FROM table_name <br> WHERE column_name > ANY (SELECT column_name FROM table_name <br> WHERE (condition)); </code><br>Here
+          ALL operator works like OR operator.</li>
+        <li><span>EXIST:</span> It is a multivalue operator. which takes multiple value in the RHS and display existed
+          values in
+          LHS.<br><code> Syntax: SELECT column_name <br> FROM table_1 <br> WHERE EXIST (SELECT key_attribute <br> FROM table_2 <br> WHERE table_1.key_attr = table_2.key_attr); </code>
+        </li>
+        <li><span>NOT EXIST:</span> It is a multivalue operator. which takes multiple value in the RHS and display not
+          existed values in
+          LHS.<br><code> Syntax: SELECT column_name <br> FROM table_1 <br> WHERE NOT EXIST (SELECT key_attribute <br> FROM table_2 <br> WHERE table_1.key_attr = table_2.key_attr); </code>
+        </li>
+      </ol>
+    </blockquote>
+  </div>
+  <div class="sub-heading">
+    <h4>Functions</h4>
+    <hr>
+    <p><b>Definition:</b></p>
+    <blockquote>It is a set of instructions or block of code used to generate some output. It is known as function.
+    </blockquote>
+    <p><b>types of functions:</b></p>
+    <ol>
+      <li>
+        <p> Built in functions:</p>
+        <blockquote> Which are already present in software or language.</blockquote>
+      </li>
+      <li>
+        <p>User defined function: </p>
+        <blockquote> It can be created using developer's own logic.</blockquote>
+      </li>
+    </ol>
+    <ol>
+      <li>
+        <p><b>Built in functions:</b></p>
+        <blockquote>
+          <p> types of Built in functions: </p>
+          <ol>
+            <li><span id="fn">single row function:</span>
+              <blockquote>it is a function which takes N number of inputs and generate N number of outputs. It executes
+                row by row.</blockquote>
+            </li>
+            <span>Types of single row function (SRF):</span>
+            <ol>
+              <li>Character SRF: <ul>
+                  <li>UPPER( )</li>
+                  <li>LOWER( )</li>
+                  <li>INITCAP( )</li>
+                  <li>REVERSE( )</li>
+                  <li>LENGTH( )</li>
+                  <li>REPLACE( )</li>
+                  <li>CONCAT( )</li>
+                  <li>SUBSTR( )</li>
+                </ul>
+              </li>
+              <li>Number SRF: <ul>
+                  <li>SQRT(<i> number</i> )</li>
+                  <li>ABS(<i> number</i> )</li>
+                  <li>POWER(<i> num1, num2</i> )</li>
+                  <li>MOD(<i> num1, num2</i> )</li>
+                  <li>TRUNC(<i> number, decimals</i> )</li>
+                  <li>ROUND(<i> arg1, arg2</i> )</li>
+                </ul>
+              </li>
+              <li>Date SRF: <ul>
+                  <li>SYSDATE( )</li>
+                  <li>SYSTIMESTAMP( )</li>
+                </ul>
+              </li>
+              <li>Special SRF: <ul>
+                  <li>NVL</li>
+                  <li>NVL2</li>
+                </ul>
+              </li>
+            </ol>
+            <p class="refer" id="bolder">For more explaination of SRF types with Examples refer: <a href="https://docs.oracle.com/database/121/SQLRF/functions002.htm#SQLRF51178" target="_blank">Click Here</a> and select type. You will get more explaination about that type.</p>
+            <span>Characteristics:</span>
+            <ul>
+              <li>single row function executes row by row.</li>
+              <li>In where clause we can take single row functions.</li>
+              <li>single row functions can be nested.</li>
+            </ul>
+            <span>Syntax:</span>
+            <blockquote><code>SELECT SRF(column_name) <br> FROM table_name;</code></blockquote>
+            <li><span id="fn">multirow function:</span>
+              <blockquote>it is a function which takes N number of inputs and generates single output. It executes group
+                by group. It also known as Aggregate function.
+              </blockquote>
+            </li>
+            <span>Types of multirow function (MRF):</span>
+            <ul>
+              <li>MAX( )</li>
+              <li>MIN( )</li>
+              <li>SUM( )</li>
+              <li>AVG( )</li>
+              <li>COUNT( )</li>
+            </ul>
+            <span>Characteristics:</span>
+            <ul>
+              <li>Multirow functions executes group by group.</li>
+              <li>In where clause we can't take multirow functions.</li>
+              <li>Along with multirow functions we can't take normal column in select clause.</li>
+              <li>Multirow functions neglate null values.</li>
+              <li>Multirow functions can't be nested.</li>
+            </ul>
+            <span>Syntax:</span>
+            <blockquote><code>SELECT MRF(column_name) <br> FROM table_name;</code></blockquote>
+          </ol>
+        </blockquote>
+      </li>
+    </ol>
+    <div class="heading">
+      <h4>Group by Clause</h4>
+      <hr>
+      <p><b>Definition:</b></p>
+      <blockquote>It is a clause used to create a group or group of records.</blockquote>
+      <p><b>Functionality:</b></p>
+      <blockquote>Goes to the table which is under execution area search for the column_name and start creating group
+        row by row.</blockquote>
+      <p><b>Characteristics:</b></p>
+      <ul>
+        <li>Group by clause executes row by row.</li>
+        <li>It executes after the from clause but if there is a condition then it executes after where clause.
+        </li>
+        <li>Along with the group by clause written column_name is known as group by expression.</li>
+        <li>Group by expression is mandatory to write in select clause.</li>
+        <li>It is possible to grouped multiple columns.</li>
+        <li>After group by clause every clauses executes group by group.</li>
+      </ul>
+      <p><b>path of execution:</b></p>
+      <ol>
+        <li>FROM</li>
+        <li>WHERE</li>
+        <li>GROUP BY</li>
+        <li>SELECT</li>
+      </ol>
+      <p><b>syntax:</b></p>
+      <blockquote><code>GROUP BY column_name/expression;</code></blockquote>
+    </div>
+    <div class="heading">
+      <h4>Having Clause</h4>
+      <hr>
+      <p><b>Definition:</b></p>
+      <blockquote>It is a clause used to filter the groups. It executes group by group.</blockquote>
+      <p><b>Functionality:</b></p>
+      <blockquote>Goes to the table which is under execution area search for the group and filter the group.
+      </blockquote>
+      <p><b>Characteristics:</b></p>
+      <ul>
+        <li>Having clause executes group by group.</li>
+        <li>Having clause executes after the from clause but if there is a condition and group then it executes after
+          where clause and having clause.
+        </li>
+        <li>In having clause we can take multirow function condition.</li>
+      </ul>
+      <p><b>path of execution:</b></p>
+      <ol>
+        <li>FROM</li>
+        <li>WHERE</li>
+        <li>GROUP BY</li>
+        <li>HAVING</li>
+        <li>SELECT</li>
+      </ol>
+      <p><b>syntax:</b></p>
+      <blockquote><code>HAVING (multirow function condition);</code></blockquote>
+    </div>
+    <div class="heading">
+      <h4>Order by Clause</h4>
+      <hr>
+      <p><b>Definition:</b></p>
+      <blockquote>It is a clause used to sorting the values or arrange the values.</blockquote>
+      <p><b>Characteristics:</b></p>
+      <ul>
+        <li>it is used to sort the values.</li>
+        <li>it executes after select clause.</li>
+        <li>order by clause executes by default in ascending order.</li>
+        <li>in order by clause we can take multiple columns.</li>
+      </ul>
+      <p><b>path of execution:</b></p>
+      <ol>
+        <li>FROM</li>
+        <li>SELECT</li>
+        <li>ORDER BY</li>
+      </ol>
+      <p><b>syntax:</b></p>
+      <blockquote><code>ORDER BY column_name/expression/MRF/aliasname ASC/DESC;</code></blockquote>
+      <strong>NOTE: In order by clause only first column will order and remaining columns will assigned.</strong>
+    </div>
+    <div class="heading">
+      <h4>Subquery</h4>
+      <hr>
+      <p><b>Definition:</b></p>
+      <blockquote>
+        query inside another query is known as subquery.
+      </blockquote>
+      <p><b>Kinds of subquery:</b></p>
+      <ul>
+        <li>Inner query</li>
+        <li>outer query</li>
+      </ul>
+      <p><b>Functionality of subquery:</b></p>
+      <ul>
+        <li>first it goes to inner query and execute it.</li>
+        <li>inner query is used to find the unknown value.</li>
+        <li>inner query generates some partial output.</li>
+        <li>outer query generates complete output.</li>
+        <li>the output of inner query is treated as input for outer query.</li>
+        <li>outer query is dependent on inner query.</li>
+        <li>first inner query execute to give some partial output and then outer query execute to give complete output.
+        </li>
+      </ul>
+      <p><b>syntax:</b></p>
+      <blockquote>
+        <code> SELECT column_name FROM table_name1 <br> WHERE column_name operator (SELECT column_name FROM table_name1/2<br>WHERE (condition));</code>
+      </blockquote>
+      <p><b>CASE I:</b></p>
+      <blockquote>Find the unknown values from the same table using inner query.</blockquote>
+      <p><b>CASE II:</b></p>
+      <blockquote>whenever data is present in one table and condition present in another table.</blockquote>
+      <p><b>types of subquery:</b></p>
+      <blockquote>
+        <ul>
+          <li>single row subquery</li>
+          <li>multirow subquery</li>
+        </ul>
+        <ol>
+          <li>
+            <p>single row subquery:</p> From the inner query if the partial output is single value then it is known as
+            single row subquery. There are two types of operator: relational and comparison.
+          </li>
+          <li>
+            <p>multirow subquery:</p> From the inner query if the partial output is multiple values then it is known as
+            multirow subquery. There are two types of operator: special operator and subquery operator.
+          </li>
+        </ol>
+      </blockquote>
+      <p><b>conditions of subquery:</b></p>
+      <ol>
+        <li>in inner query select clause column_name should be same as outer query where clause column_name
+          <code>E.g. WHERE SAL > (SELECT SAL FROM table_name); </code>
+        </li>
+        <li>in inner query select clause column_name or data type should be same as outer query where clause column_name
+          or data type.<code> E.g. WHERE SAL > (SELECT COMM FROM table_name); </code></li>
+        <li>in inner query select clause we can't compare multiple column_name with the outer query where clause
+          column_name.<code> E.g. WHERE SAL > (SELECT SAL,COMM FROM table_name); </code></li>
+      </ol>
+    </div>
+    <div class="heading">
+      <h4>Nested subquery</h4>
+      <hr>
+      <p><b>Characteristics:</b></p>
+      <blockquote>
+        <ul>
+          <li>Nested subquery is used to find 2nd, 3rd . . . . 255th highest or lowest value.</li>
+          <li>it is possible to nest 255 subqueries.</li>
+        </ul>
+      </blockquote>
+      <p><b>syntax for 3rd lowest value:</b></p>
+      <blockquote><code>
+       SELECT MIN(column_name) FROM table_name <br> WHERE column_name > (SELECT MIN(column_name) FROM table_name <br> WHERE column_name > (SELECT MIN(column_name) FROM table_name));
+      </code></blockquote>
+      <p><b>syntax for 6th highest value:</b></p>
+      <blockquote><code>
+       SELECT MAX(column_name) FROM table_name <br> WHERE column_name < (SELECT MAX(column_name) FROM table_name <br> WHERE column_name < (SELECT MAX(column_name) FROM table_name <br> WHERE column_name < (SELECT MAX(column_name) FROM table_name <br> WHERE column_name < (SELECT MAX(column_name) FROM table_name <br> WHERE column_name < (SELECT MAX(column_name) FROM table_name)))));
+      </code></blockquote>
+      <p id="join">4.<b> Joins:</b></p>
+      <blockquote>
+        <p>Definition:</p> Retrieval of data from the multiple table simultaneously. <br> <br>
+        <p>types of joins:</p>
+        <ol>
+          <li>cross join</li>
+          <li>inner join</li>
+          <li>natural join</li>
+          <li>outer join <ol type="A">
+              <li>left outer join</li>
+              <li>right outer join</li>
+              <li>full outer join</li>
+            </ol>
+          </li>
+          <li>self join</li>
+        </ol>
+      </blockquote>
+      <ol>
+        <li>
+          <p>cross join:</p>
+          <blockquote>
+            it is a join used to get combination of one table to another table. It is also known as Cartesian join ( *
+            ). <br>
+            <span>When to use cross join?</span> To get a combination of two or more tables. <br>
+            <span>How to know cross join?</span> There is no condition in this join. <br>
+            <span>ANSI
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 CROSS JOIN table_2;</code>
+            <br><span>Oracle
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1, table_2;</code><br><span>Output:</span>
+            <ol>
+              <li>Matched records.</li>
+              <li>Unmatched records.</li>
+              <li>Error records.</li>
+            </ol><strong>NOTE: Even there is no connection between two tables, cross join gives some output. It is known
+              as Error records.</strong>
+          </blockquote>
+        </li>
+        <li>
+          <p>Inner join:</p>
+          <blockquote>
+            it is a join used to get only the Matched records. It is also known as Equijoin.<br>
+            <span>When to use inner join?</span> To get Matched records from two diffrent tables. <br>
+            <span>How to know inner join?</span> There is condition in this join. <br>
+            <span>ANSI
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 INNER JOIN table_2 <br> ON table_1.key_attr = table_2.key_attr;</code>
+            <br><span>Oracle
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1, table_2 <br> WHERE table_1.key_attr = table_2.key_attr;</code><br><span>Output:</span>
+            <ol>
+              <li>Matched records.</li>
+            </ol>
+          </blockquote>
+        </li>
+        <li>
+          <p>Natural join:</p>
+          <blockquote>
+            it is a join used to display natural output without making connection.<br>
+            <span>When to use natural join?</span> Whenever we don't know table structure. <br>
+            <span>CASE I:</span> If there is natural connection between two tables then it will give output as inner
+            join (Matched records). <br>
+            <span>CASE II:</span> If there is no natural connection between two tables then it will give output as cross
+            join (Error records). <br>
+            <span>ANSI
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 NATURAL JOIN table_2;</code>
+            <br><span>Oracle
+              syntax:</span><code> <br> There is no oracle syntax for natural join. Because it is same as cross join.</code><br><span>Output:</span>
+            <ol>
+              <li>Matched records.</li>
+              <li>Error records.</li>
+            </ol>
+          </blockquote>
+        </li>
+        <li>
+          <p>Outer join:</p>
+          <blockquote>
+            it is a join used to get Matched and Unmatched records.<br><br>
+            <ol type="A" id="oj">
+              <li>Left outer join:</li> It is a join used to get Matched and Unmatched records from left side table.
+              <br> <span>ANSI
+                syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 LEFT OUTER JOIN table_2 <br> ON table_1.key_attr = table_2.key_attr;</code>
+              <br><span>Oracle
+                syntax:</span><code> <br>  SELECT column_1, column_2, column_n<br> FROM table_1, table_2 <br> WHERE table_1.key_attr = table_2.key_attr ( + ); </code><br><span>Output:</span>
+              <ol>
+                <li>Both Matched records and Unmatched records from table_1.</li>
+                <li>Only Matched records from table_2.</li>
+              </ol><br>
+              <li>Right outer join:</li> It is a join used to get Matched and Unmatched records from right side table.
+              <br> <span>ANSI
+                syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 RIGHT OUTER JOIN table_2 <br> ON table_1.key_attr = table_2.key_attr;</code>
+              <br><span>Oracle
+                syntax:</span><code> <br>  SELECT column_1, column_2, column_n<br> FROM table_1, table_2 <br> WHERE table_1.key_attr ( + ) = table_2.key_attr; </code><br><span>Output:</span>
+              <ol>
+                <li>Both Matched records and Unmatched records from table_2.</li>
+                <li>Only Matched records from table_1.</li>
+              </ol><br>
+              <li>Full outer join:</li> It is a join used to display both Matched and Unmatched records of multiple
+              tables. <br> <span>ANSI
+                syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 FULL OUTER JOIN table_2 <br> ON table_1.key_attr = table_2.key_attr;</code>
+              <br><span>Oracle
+                syntax:</span><code> <br> There is no oracle syntax for full outer join. Because it is same as inner join.</code><br><span>Output:</span>
+              <ol>
+                <li>Both Matched records and Unmatched records from table_1 and table_2.</li>
+              </ol>
+            </ol>
+          </blockquote>
+        </li>
+        <li>
+          <p>Self join:</p>
+          <blockquote>
+            Retrieval of data from the same table but the output is present in diffrent row. It is used to make replica
+            of table.<br>
+            <span>When to use self join?</span> To get output from same table. <br>
+            <span>ANSI
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 [AliasName] JOIN table_2 [AliasName] <br> ON table_1.key_attr = table_2.key_attr;</code>
+            <br><span>Oracle
+              syntax:</span><code> <br> SELECT column_1, column_2, column_n<br> FROM table_1 [AliasName], table_2 [AliasName] <br> WHERE table_1.key_attr = table_2.key_attr;</code><br><span>Output:</span>
+            <ol>
+              <li>Matched records from the same table.</li>
+            </ol>
+          </blockquote>
+        </li>
+      </ol>
+    </div>
+    <div class="heading">
+      <h4>Pseudo column</h4>
+      <hr>
+      <p><b>Definition:</b></p>
+      <blockquote>Pseudo column is a false column which is present in database for every table. If we want we need to
+        invoke.</blockquote>
+      <p><b>types of Pseudo column:</b></p>
+      <ol>
+        <li>ROWID</li>
+        <li>ROWNUM</li>
+      </ol>
+      <ol>
+        <li>
+          <p>ROWID:</p>
+          <blockquote>
+            It is a Pseudo column which is present in database. <br> <span>Characteristics of ROWID:</span> <br>
+            <ul>
+              <li>it is unique.</li>
+              <li>it is not null.</li>
+              <li>it is a combination of unique and not null.
+              <li>it can acts as a primary key of table, Not as foreign key.</li>
+        </li>
+        <li>ROWID is static.</li>
+        <li>it is generated at the time of insertion of data.</li>
+        </ul><span>Syntax:</span><br><code>SELECT ROWID, table_name.* <br>FROM table_name;</code>
+        </blockquote>
+        </li>
+        <li>
+          <p>ROWNUM:</p>
+          <blockquote>
+            it is a Pseudo column which is present in database. <br> <span>Characteristics of ROWNUM:</span> <br>
+            <ul>
+              <li>it is a number.</li>
+              <li>it is always starts with '1'.</li>
+              <li>it is generated at the time of execution.</li>
+              <li>It is a dynamic in nature.</li>
+            </ul><span>Syntax:</span><br><code>SELECT ROWNUM, table_name.* <br>FROM table_name;</code>
+          </blockquote>
+        </li>
+      </ol>
+    </div>
+    <div class="heading" id="head">
+      <h4>DDL</h4>
+      <hr>
+      <ol>
+        <li>
+          <p><b>CREATE: </b></p>This command is used to create a new table. <br><span>Syntax to create new table:
+          </span><br><code>CREATE TABLE table_name <br>
+        (column_1 datatype, Null/NotNull <br>
+        column_2 datatype, Null/NotNull <br>
+        column_3 datatype, Null/NotNull <br>
+        CONSTRAINT CRN CN (column_name), <br>
+        CONSTRAINT CRN CN (column_name));
+      </code><br><strong>NOTE: Where CRN --> Constraint Reference Name and CN --> Constraint Name.
+          </strong>
+        </li><br>
+        <li>
+          <p><b>ALTER: </b></p>This command is used to add, delete or change the columns/constraints in the table.
+          <br><span>Syntax to add a column to the table. </span><br><code>ALTER TABLE table_name <br>
+        ADD column_name datatype(<i>size</i>) Null/Notnull;</code>
+          <br><span>Syntax to modify a column to the table. </span><br><code>ALTER TABLE table_name <br>
+          MODIFY column_name datatype(<i>size</i>);</code>
+          <br><span>Syntax to delete a column from the table. </span><br><code>ALTER TABLE table_name <br>
+            DROP column_name;</code>
+          <br><span>Syntax to add or modify a constraint to the column. </span><br><code>ALTER TABLE table_name <br>
+          ADD/MODIFY CONSTRAINT CRN CN (column_name);</code><br><span>Syntax to delete a constraint from the column.
+          </span><br><code>ALTER TABLE table_name <br>
+            DROP CONSTRAINT CRN;</code><br><strong>NOTE: Where CRN --> Constraint Reference Name and CN --> Constraint
+            Name.</strong>
+        </li><br>
+        <li>
+          <p><b>RENAME: </b></p>This command is used to rename the table name and column name.<br><span>Syntax to rename
+            the table. </span><br><code>RENAME older_table_name TO new_table_name;</code><br><span>Syntax to rename the
+            column_name.
+          </span><br><code>ALTER TABLE table_name <br> RENAME COLUMN older_column_name TO new_column_name;</code>
+        </li><br>
+        <li>
+          <p><b>TRUNCATE: </b></p>This command is used to deletes the data permanently inside a table, but not the table
+          structure. <br><span>Syntax to truncate the table: </span><br><code>TRUNCATE TABLE table_name;</code>
+        </li><br>
+        <li>
+          <p><b>DROP: </b></p>This command is used to deletes the data inside a table and the table structure will get
+          collapsed. <br><span>Syntax to drop the table: </span><br><code>DROP TABLE table_name;</code>
+        </li>
+      </ol>
+    </div>
+    <div class="heading" id="head">
+      <h4>DML</h4>
+      <hr>
+      <ol>
+        <li>
+          <p><b>INSERT:</b></p>This command is used to insert the data or values into the table. <br><span>Syntax to
+            insert data into the
+            table:</span><br><code>INSERT INTO table_name VALUES (<i>'data_1','data_n'</i> );</code><br><span>Syntax to
+            insert data into the table using column
+            reference:</span><br><code>INSERT INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> );</code>
+          <br><span>Syntax to insert multiple rows into the table using column
+            reference:</span><br><code>INSERT ALL <br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> )<br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> )<br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> ) <br> SELECT * FROM DUAL;</code><br><strong>NOTE:
+            At a time we can insert maximum three records into the table.</strong><br><span>Syntax to copy the records
+            from one table to another
+            table:</span><br><code>INSERT INTO table_2 VALUES ( SELECT * FROM table_1);</code><br><strong>NOTE:
+            Structure must be same of both the tables to copy data from one table to another table. In the syntax data
+            is copy from table_1 and inserted it into table_2.</strong>
+        </li><br>
+        <li>
+          <p><b>UPDATE: </b></p>This command is used to update the records into the table. <br><span>Syntax to update
+            the records:</span><br><code>UPDATE table_name <br>SET column_name='data' WHERE column_name='data';</code>
+        </li><br>
+        <li>
+          <p><b>DELETE: </b></p>This command is used to delete the records from the table. <br><span>Syntax to delete
+            the records:</span><br><code>DELETE FROM table_name <br>WHERE column_name='data';</code>
+        </li>
+      </ol>
+      <div class="heading" id="head">
+        <h4>TCL</h4>
+        <hr>
+        <ol>
+          <li>
+            <p><b>COMMIT: </b></p>This command is used to save all the transactions of data manipulating language.
+            <br><span>Syntax:</span><br><code>COMMIT;</code>
+          </li><br>
+          <li>
+            <p><b>ROLLBACK: </b></p>This command is used to get back the deleted as well as updated transactions only
+            before commit.<br><span>Syntax:</span><br><code>ROLLBACK;</code><br><strong>NOTE: Once you commit you would
+              unable to get the transactions.</strong>
+          </li><br>
+          <li>
+            <p><b>SAVEPOINT: </b></p>This command is used to get back some transaction without commit. Here you must to
+            create savepoint after insert or update transactions by giving specific name. Using specific name you can
+            rollback.<br><span>Syntax to create savepoint:</span><br><code>SAVEPOINT <i>name</i>;</code><br><span>Syntax
+              to get back transactions:</span><br><code>ROLLBACK TO <i>savepoint_name</i>;</code>
+          </li>
+        </ol>
+      </div>
+      <div class="heading" id="head">
+        <h4>DCL</h4>
+        <hr>
+        <ol>
+          <li>
+            <p><b>GRANT:</b></p>This command is used to give permission to the user to get, insert, update and delete
+            the data from the table.
+            <br><span>Syntax:</span><br><code>GRANT SELECT/INSERT/UPDATE/DELETE ON <i> table_name </i>TO <i> user_name;</i></code>
+          </li><br>
+          <li>
+            <p><b>REVOKE:</b></p>This command is used to take back permission from the user to get, insert, update and
+            delete the data from the table.
+            <br><span>Syntax:</span><br><code>REVOKE SELECT/INSERT/UPDATE/DELETE ON <i> table_name </i>FROM <i> user_name;</i></code>
+          </li>
+        </ol>
+        <p><b>Steps to How to create user?</b></p>
+        <blockquote>
+          <span>Step 1:</span><code> CONN </code><br>
+          <span>Step 2:</span> Username --> SYSTEM & Password --> TIGER <br>
+          <span>Step 3:</span><code> CREATE USER <i>user_name</i> IDENTIFIED BY <i>user_password</i>;</code><br>
+          <span>Step 4:</span><code> GRANT CREATE SESSION TO <i>user_name</i>;</code><br>
+          <span>Step 5:</span><code> GRANT UNLIMITED TABLESPACE TO <i>user_name</i>; </code><br>
+          <span>Step 6:</span><code> GRANT CREATE TABLE TO <i>user_name</i>; </code><br>
+          <span><strong>NOTE:</strong></span> Now user created successfully.
+        </blockquote>
+        <p><b>Steps to How to give permission to user?</b></p>
+        <blockquote>
+          <span>Step 1:</span><code> CONN </code><br>
+          <span>Step 2:</span> Username --> SYSTEM & Password --> TIGER <br>
+          <span>Step
+            3:</span><code> GRANT SELECT/INSERT/UPDATE/DELETE ON<i> table_name </i>TO <i>user_name</i>; </code><br>
+          <span>Step 4:</span><code> CONN </code><br>
+          <span>Step 5:</span> Username --> <i>user_name</i> & Password --> <i>user_password</i> <br>
+          <span><strong>NOTE:</strong></span> Now permission given to user to SELECT/INSERT/UPDATE/DELETE the data on
+          <i>table_name.</i> User able to get/insert/update/delete the data from table. <br>
+          <span>Step 6:</span> E.g.<code> SELECT * FROM SCOTT.<i>table_name;</i></code><br>
+        </blockquote>
+        <p><b>Steps to How to take back permission from user?</b></p>
+        <blockquote>
+          <span>Step 1:</span><code> CONN </code><br>
+          <span>Step 2:</span> Username --> SYSTEM & Password --> TIGER <br>
+          <span>Step
+            3:</span><code> REVOKE SELECT/INSERT/UPDATE/DELETE ON <i> table_name </i>FROM <i> user_name;</i></code><br>
+          <span>Step 4:</span><code> CONN </code><br>
+          <span>Step 5:</span> Username --> <i>user_name</i> & Password --> <i>user_password</i> <br>
+          <span><strong>NOTE:</strong></span> Now permission taken back from user to SELECT/INSERT/UPDATE/DELETE the
+          data on <i>table_name.</i> User unable to get/insert/update/delete the data from table.<br>
+          <span>Step 6:</span> E.g.<code> SELECT * FROM SCOTT.<i>table_name;</i></code><br>
+        </blockquote>
+      </div>
+      <div class="heading">
+        <h4>Correlated Subquery</h4>
+        <hr>
+        <p><b>What is Correlated Subquery?</b></p>
+        <blockquote>Inner query dependent on outer query and outer query dependent on inner query is known as Correlated
+          Subquery. It is combination of join and subquery.</blockquote>
+        <p><b>Functionality: </b></p>
+        <ol>
+          <li>First outer query will get execute.</li>
+          <li>In outer query has condition which is present in where clause.</li>
+          <li>Inner query is present in outer query where clause.</li>
+          <li>From inner query matching partial output given to outer query to display the output.</li>
+        </ol>
+        <p><b>Syntax:</b></p>
+        <blockquote>
+          <code>SELECT column_name <br> FROM table_1 <br> WHERE <i>operator</i> (SELECT key_attribute <br> FROM table_2 <br> WHERE table_1.key_attr = table_2.key_attr); </code>
+        </blockquote>
+      </div>
+      <div class="heading">
+        <h4>Diffrence</h4>
+        <hr>
+        <p><b>Diffrence between Delete, Drop and Truncate.</b></p>
+        <div class="hori">
+          <table>
+            <thead>
+              <tr>
+                <th>Parameters</th>
+                <th>DELETE Command</th>
+                <th>DROP Command</th>
+                <th>TRUNCATE Command</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Language</td>
+                <td>The DELETE command is Data Manipulation Language Command.</td>
+                <td>The DROP command is Data Definition Language Command.</td>
+                <td>The TRUNCATE command is a Data Definition Language Command.</td>
+              </tr>
+              <tr>
+                <td>Use</td>
+                <td>The DELETE command deletes one or more existing records from the table in
+                  the database.</td>
+                <td>The DROP Command drops the complete table from the database.</td>
+                <td>The TRUNCATE Command deletes all the rows from the existing table, leaving
+                  the row with the column names.</td>
+              </tr>
+              <tr>
+                <td>Transition</td>
+                <td>We can restore any deleted row or multiple rows from the database using
+                  the ROLLBACK command.</td>
+                <td>We cannot get the complete table deleted from the database using the
+                  ROLLBACK command.</td>
+                <td>We cannot restore all the deleted rows from the database using the
+                  ROLLBACK command.</td>
+              </tr>
+              <tr>
+                <td>Memory Space</td>
+                <td>The DELETE command does not free the allocated space of the table from
+                  memory.</td>
+                <td>The DROP command removes the space allocated for the table from memory.
+                </td>
+                <td>The TRUNCATE command does not free the space allocated for the table from
+                  memory.</td>
+              </tr>
+              <tr>
+                <td>Performance Speed</td>
+                <td>The DELETE command performs slower than the DROP command and TRUNCATE
+                  command as it deletes one or more rows based on a specific condition.</td>
+                <td>The DROP Command has faster performance than DELETE Command but not as
+                  compared to the Truncate Command because the DROP command deletes the table from the database after
+                  deleting the rows.</td>
+                <td>The TRUNCATE command works faster than the DROP command and DELETE command
+                  because it deletes all the records from the table without any condition.</td>
+              </tr>
+              <tr>
+                <td>Integrity Constraints</td>
+                <td>The Integrity Constraints remain the same in the DELETE command.</td>
+                <td>The Integrity Constraints get removed for the DROP command.</td>
+                <td>The Integrity Constraints will not get removed from the TRUNCATE command.
+                </td>
+              </tr>
+              <tr>
+                <td>Permission</td>
+                <td>DELETE permission is required to delete the rows of the table.</td>
+                <td>We need ALTER permission on the schema to which the table belongs and
+                  CONTROL permission on the table to use the DROP command.</td>
+                <td>We need table ALTER permission to use the TRUNCATE command.</td>
+              </tr>
+              <tr>
+                <td>Syntax:</td>
+                <td><code>DELETE FROM table_name WHERE condition;</code></td>
+                <td><code>DROP TABLE table_name;</code><br>Drop from Bin:<code> PURGE TABLE table_name;</code></td>
+                <td><code>TRUNCATE TABLE table_name;</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="heading">
+        <h4>Normalization</h4>
+        <hr>
+        <p><b>What is Normalization?</b></p>
+        <blockquote>It is process of reducing a bigger table into smaller table by identifying redundancy (repeatations)
+          and anomalies (side effects).</blockquote>
+        <p><b>types of attribute:</b></p>
+        <ol>
+          <li>Key attribute</li>
+          <li>non key attribute</li>
+          <li>prime key attribute</li>
+          <li>non prime key attribute</li>
+          <li>super key attribute</li>
+          <li>composite key attribute</li>
+          <li>foreign key attribute</li>
+        </ol>
+        <p><b>Example table:</b></p>
+        <div class="demotable">
+          <table>
+            <thead>
+              <tr>
+                <th>Student_Id</th>
+                <th>Student_Name</th>
+                <th>Student_Email</th>
+                <th>Student_Contact</th>
+                <th>Student_Loc</th>
+                <th>Student_Branch</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Sundra</td>
+                <td>s@gmail.com</td>
+                <td>1234567890</td>
+                <td>Pune</td>
+                <td>CS</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Macha</td>
+                <td>m@gmail.com</td>
+                <td>0987654321</td>
+                <td>Banglore</td>
+                <td>E&TC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ol>
+          <li><span>Key attribute: </span>It is the unique attribute present in the table. It is also known as candidate
+            key. <br>E.g. Student_Id, Student_Email, Student_Contact</li><br>
+          <li><span>Non key attribute: </span>Non key attributes are not unique. Except key attribute all attributes are
+            non key attributes <br>E.g. Student_Name, Student_Loc, Student_Branch</li><br>
+          <li><span>prime key attribute: </span>Keys which are eligible for becoming a primary key but among them only
+            one can be selected as prime key attribute. <br>E.g. Student_Id</li><br>
+          <li><span>non prime key attribute: </span>All the remaining keys which satisfy with the characteristics of
+            primary key but excepting prime key attribute.<br>E.g. Student_Email, Student_Contact</li><br>
+          <li><span>Super key attribute: </span>It is the combination of two or more key attributes. Addition of key
+            attributes.<br>E.g.1. Student_Id + Student_Email <br>E.g.2. Student_Id + Student_Email + Student_Contact
+          </li><br>
+          <li><span>composite key attribute: </span>It is the combination of two or more Non key attributes. Addition of
+            Non key attributes.<br>E.g.1. Student_Name + Student_Loc <br>E.g.2. Student_Name + Student_Loc +
+            Student_Branch</li><br>
+          <li><span>Foreign key attribute: </span>It is key attribute which is used to establish connection between two
+            or more tables. <br>E.g. Student_Id</li>
+        </ol>
+        <p><b>What is Redundancy?</b></p>
+        <blockquote>It is repeatation of data or duplication of data.</blockquote>
+        <p><b>What is Anomalies?</b></p>
+        <blockquote>They can be termed as side effects that we can have in the form of insert, update and delete.
+        </blockquote>
+        <p><b>Types of Dependencies: </b></p>
+        <ol>
+          <li>Total functional Dependency</li>
+          <li>partial functional Dependency</li>
+          <li>Transitive functional Dependency</li>
+        </ol>
+        <p><b>Diffrence between Dependencies:</b></p>
+        <div class="hori">
+          <table id="cent">
+            <thead>
+              <tr>
+                <th>Total functional Dependency</th>
+                <th>Partial functional Dependency</th>
+                <th>Transitive functional Dependency</th>
+              </tr>
+            </thead>
+            <tbody id="norm">
+              <tr>
+                <td>All the attributes depends on one attribute.</td>
+                <td>It means composite key attributes depends on two attributes.</td>
+                <td>Attribute indirectly depends on another attribute. <br> One non key attribute depends on another non
+                  key attribute.</td>
+              </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li>A --Defines--> B</li>
+                    <li>A --Defines--> C</li>
+                    <li>A --Defines--> D</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>A --Defines--> C</li>
+                    <li>B --Defines--> D</li>
+                    <li>B --Defines--> C</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>A --Defines--> B</li>
+                    <li>A --Defines--> C</li>
+                    <li>A --Defines--> D</li>
+                    <li>C --Defines--> D</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>Redundancy: NO</td>
+                <td>Redundancy: YES</td>
+                <td>Redundancy: YES</td>
+              </tr>
+              <tr>
+                <td>Anomalies: NO</td>
+                <td>Anomalies: YES</td>
+                <td>Anomalies: YES</td>
+              </tr>
+            </tbody>
+          </table>
+        </div><br>
+        <p><b>Types of Normalization:</b></p>
+        <ol>
+          <li><span>first normal form (1NF):</span>
+            <blockquote>
+              - Data entered into the cell should be single value data or atomic data. <br>
+              - If the table is unconditional, then convert it into 'Total functional Dependencies'.
+            </blockquote>
+          </li>
+          <li><span>second normal form (2NF):</span>
+            <blockquote>
+              - If the table is under 2NF first it should be complete with 1NF. <br>
+              - If the table is having 'Partial functional Dependency' it should be convert into 'Total functional
+              Dependency'.
+            </blockquote>
+          </li>
+          <li><span>third normal form (3NF):</span>
+            <blockquote>
+              - If the table is under 3NF first it should be complete with 2NF. <br>
+              - If the table is having 'Transitive functional Dependency' it should be convert and make into 'Total
+              functional Dependency'.
+            </blockquote>
+          </li>
+        </ol>
+        <p><b>Disadvantage of Normalization:</b></p>
+        <blockquote>The minor disadvantage is that we have to write complex quries to get more numbers of tables to be
+          accessed.</blockquote>
+        <p><b>Denormalization:</b></p>
+        <blockquote>It is the process of combining more than one smaller table to form a bigger table. It is known as
+          Denormalization.</blockquote>
+      </div>
+      <div class="heading">
+        <h4>Acid Property</h4>
+        <hr>
+        <p><b>What is Transaction?</b></p>
+        <blockquote>A transaction is a single logical unit of work which accesses and possibly modifies
+          the contents of a database. Transactions access data using read and write
+          operations.</blockquote>
+        <p><b>What is Acid property?</b></p>
+        <blockquote>In order to maintain consistency in a database, before and after the transaction,
+          certain properties are followed. These are called ACID properties.</blockquote>
+        <p><b>Acid properties in DBMS:</b></p>
+        <ol>
+          <li><span>Atomicity: </span>
+            <blockquote>
+              Atomicity is also known as the ‘All or nothing rule’. <br> Each transaction is considered as one unit and
+              either runs to completion or is not
+              executed at all.
+            </blockquote>
+          </li>
+          <li><span>Consistency: </span>
+            <blockquote>
+              This means that integrity constraints must be maintained so that the database is
+              consistent before and after the transaction. It refers to the correctness of a
+              database. Referring to the example below, <br>The total amount before and after the transaction must be
+              maintained the
+              same.
+            </blockquote>
+          </li>
+          <li><span>Isolation: </span>
+            <blockquote>
+              This property ensures that multiple transactions can occur concurrently without
+              leading to the inconsistency of database state. Transactions occur independently
+              without interference. Changes occurring in a particular transaction will not be
+              visible to any other transaction until that particular change in that transaction is
+              written to memory or has been committed. This property ensures that the
+              execution of transactions concurrently will result in a state that is equivalent to a
+              state achieved these were executed serially in some order.
+            </blockquote>
+          </li>
+          <li><span>Durability: </span>
+            <blockquote>
+              This property ensures that once the transaction has completed execution, the
+              updates and modifications to the database are stored in and written to disk and
+              they persist even if a system failure occurs. These updates now become
+              permanent and are stored in non-volatile memory. The effects of the
+              transaction, thus are never lost.
+            </blockquote>
+          </li>
+          <p class="refer">For more explaination of Acid properties with Examples refer: <a href="https://www.google.com/amp/s/www.geeksforgeeks.org/acid-properties-in-dbms/amp/" target="_blank">Click Here</a></p>
+        </ol>
+        <p><b>What is View? (PL/SQL)</b></p>
+        <blockquote>A view is a virtual table which consists of a subset of data contained in a table.
+          Views are not virtually present, and it takes less space to store.
+          View can have data of one or more tables combined, and it is depending on the
+          relationship.</blockquote>
+        <p><b>What is Index? (PL/SQL)</b></p>
+        <blockquote>An index is performance tuning method of allowing faster retrieval of
+          records from the table. An index creates an entry for each value and it
+          will be faster to retrieve data. <br>There are three types of indexes:</blockquote>
+        <ol>
+          <li><span>Unique Index:</span>
+            <blockquote>
+              This indexing does not allow the field to have duplicate values if the
+              column is unique indexed. Unique index can be applied automatically
+              when primary key is defined.
+            </blockquote>
+          </li>
+          <li><span>Clustered Index</span>
+            <blockquote>
+              This type of index reorders the physical order of the table and search
+              based on the key values. Each table can have only one clustered index.
+            </blockquote>
+          </li>
+          <li><span>Non Clustered Index</span>
+            <blockquote>
+              Non Clustered Index does not alter the physical order of the table and
+              maintains logical order of data. Each table can have 999 non clustered
+              indexes.
+            </blockquote>
+          </li>
+        </ol>
+        <p><b>What is a trigger? (PL/SQL)</b></p>
+        <blockquote>
+          A DB trigger is a code or programs that automatically execute with response to some
+          event on a table or view in a database. <br>Mainly, trigger helps to maintain the integrity of the database.
+          <br><br> <span>Example: </span>When a new student is added to the student database,
+          new records should be created in the related tables like Exam,
+          Score and Attendance tables.
+        </blockquote>
+        <p><b>What Is SQL Injection?</b></p>
+        <blockquote>
+          - SQL injection (SQLi) is a type of cyberattack against web applications that use SQL
+          databases such as IBM Db2, Oracle, MySQL, and MariaDB. As the name suggests, the
+          attack involves the injection of malicious SQL statements to interfere with the queries
+          sent by a web application to its database. <br><br>
+
+          - Here is how a web application normally works. A user first enters their login credentials
+          into the login form. After these credentials are successfully authenticated, the web
+          application would send an SQL statement in the form of a query to the hosting database
+          to bring forward the user’s data stored in that database. From this user’s perspective,
+          they would now be able to access their account information and send further queries to
+          the database for every action and change made within their account. <br><br>
+
+          - Now, when a SQL injection vulnerability exists, an unauthorized threat actor could
+          somehow skip the authentication process and manually inject SQL statements to send
+          fraudulent queries to the database. This would allow the attacker to view, modify, and
+          delete data from the database. <br><br>
+
+          - SQL injection is not only highly common, but also very dangerous as it can lead to
+          unauthorized access to personal data, financial information, intellectual property, and
+          trade secrets. It has been listed as the number one risk on the OWASP top 10 list of web application security
+          threats. A large number of data breaches were the result of SQL
+          injection attacks.
+        </blockquote>
+        <p><b>How Does a SQL Injection Attack Work?</b></p>
+        <blockquote>
+          -A SQL injection attack targets vulnerabilities in dynamic SQL statements. Think of a
+          dynamic SQL statement like a multivariate function in mathematics, of which the
+          parameters are fixed, while the values substituted in the independent variables determine
+          the result. <br><br>
+
+          - Similarly, a dynamic SQL statement also consists of a predetermined set of parameters
+          (such as a web form), of which the complete statement is only generated when a user
+          fills in their inputs. See the following example of a SQL statement of a login form:
+          <br><code>SELECT * FROM users <br> WHERE username = ‘$username’ AND password = bcrypt(‘$password’);</code><br><br> -
+          After the user enters their username and password, the statement would be completed,
+          after which a query would be sent to the server to retrieve the user’s information from the
+          database. <br><br>
+          - When a vulnerability exists in a dynamic SQL statement, the attacker would be able to
+          enter complex scripts into the forms to interfere with the preexisting parameters to alter
+          the meaning of the complete statement.
+        </blockquote>
+        <p><b>How to Prevent a SQL Injection Attack?</b></p>
+        <blockquote>
+          - Technically, the only way to prevent a SQL injection attack is to have input validation in
+          place. This means that inputs entered by the users must be monitored and sanitized to
+          filter out any potential malicious codes. <br><br> - This is exactly what a web application firewall (WAF) does.
+          It analyzes all inputs entered by the users into the web application to find any matches with suspicious
+          codes.
+        </blockquote>
+      </div>
+      <!-- end menu -->
+      <!-- start footer -->
+      <footer class="footer">
+        <div class="subject">
+          <h3>Thank You!</h3>
+        </div>
+      </footer>
+      <!-- end footer -->
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
