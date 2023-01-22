@@ -66,7 +66,7 @@ blockquote span{
 strong{
     color: rgb(255, 26, 26);
     margin-left: 10px;
-    font-weight: bolder;
+    font-weight: normal;
 }
 /* start menu */
 .heading{
@@ -229,4 +229,32 @@ tr > td:first-child{
 }
 .lower li::first-letter{
     text-transform: lowercase;
+}
+.codein-1 code::selection {
+    color: white;
+    background: green;
+}
+.codein-1 br::selection {
+    color: white;
+    background: green;
+}
+.codein-2{
+    height: 300px;
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: 1px;
+    background-color: black;
+    padding: 15px;
+    white-space: nowrap;
+}
+.codein-2 code{
+    color: rgb(204, 162, 204);
+}
+.codein-2 code::selection {
+    color: white;
+    background: green;
+}
+.codein-2 br::selection {
+    color: white;
+    background: green;
 }
