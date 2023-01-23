@@ -27,7 +27,7 @@ nav h2{
     font-family: 'Roboto Slab', serif;
 }
 .subject{
-    margin-top: 56px;
+    /* margin-top: 56px; */
     text-align: center;
     box-shadow: 0.1px 8px 18px gold;
     color: rgb(161, 255, 20);
