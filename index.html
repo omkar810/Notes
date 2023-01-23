@@ -942,7 +942,7 @@
             reference:</span><br><code>INSERT INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> );</code>
           <br><span>Syntax to insert multiple rows into the table using column
             reference:</span><br><code>INSERT ALL <br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> )<br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> )<br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> ) <br> SELECT * FROM DUAL;</code><br><strong>NOTE:
-            At a time we can insert maximum three records into the table.</strong><br><span>Syntax to copy the records
+            At a time we can insert maximum three records into the table using INSERT ALL.</strong><br><span>Syntax to make Foreign key: </span><br><code>CONSTRAINT CRN FOREIGN KEY(<i>column_name</i>) REFERENCES table_name1(<i>column_name</i>);</code><br><strong>NOTE: To make foreign key table_name1 should be present in database. The column_name should be same and it should have uniqueness.</strong><br><span>Syntax to copy the records
             from one table to another
             table:</span><br><code>INSERT INTO table_2 VALUES ( SELECT * FROM table_1);</code><br><strong>NOTE:
             Structure must be same of both the tables to copy data from one table to another table. In the syntax data
@@ -1080,7 +1080,7 @@
                 <td>We can restore any deleted row or multiple rows from the database using
                   the ROLLBACK command.</td>
                 <td>We cannot get the complete table deleted from the database using the
-                  ROLLBACK command.</td>
+                  ROLLBACK command. We can get data using FLASHBACK.</td>
                 <td>We cannot restore all the deleted rows from the database using the
                   ROLLBACK command.</td>
               </tr>
@@ -1120,7 +1120,7 @@
               <tr>
                 <td>Syntax:</td>
                 <td><code>DELETE FROM table_name WHERE condition;</code></td>
-                <td><code>DROP TABLE table_name;</code><br>Drop from Bin:<code> PURGE TABLE table_name;</code></td>
+                <td><code>DROP TABLE table_name;</code><br>Drop from Bin:<code> PURGE TABLE table_name;</code><br>Restore syntax: <code>FLASHBACK TABLE table_name TO BEFORE DROP;</code></td>
                 <td><code>TRUNCATE TABLE table_name;</code></td>
               </tr>
             </tbody>
@@ -1225,24 +1225,24 @@
               <tr id="defines">
                 <td>
                   <ul>
-                    <li>A --Defines--> B</li>
-                    <li>A --Defines--> C</li>
-                    <li>A --Defines--> D</li>
+                    <li>A-->Defines--> B</li>
+                    <li>A-->Defines--> C</li>
+                    <li>A-->Defines--> D</li>
                   </ul>
                 </td>
                 <td>
                   <ul>
-                    <li>A --Defines--> C</li>
-                    <li>B --Defines--> D</li>
-                    <li>B --Defines--> C</li>
+                    <li>A-->Defines--> C</li>
+                    <li>B-->Defines--> D</li>
+                    <li>B-->Defines--> C</li>
                   </ul>
                 </td>
                 <td>
                   <ul>
-                    <li>A --Defines--> B</li>
-                    <li>A --Defines--> C</li>
-                    <li>A --Defines--> D</li>
-                    <li>C --Defines--> D</li>
+                    <li>A-->Defines--> B</li>
+                    <li>A-->Defines--> C</li>
+                    <li>A-->Defines--> D</li>
+                    <li>C-->Defines--> D</li>
                   </ul>
                 </td>
               </tr>
@@ -1298,21 +1298,21 @@
           operations.</blockquote>
         <p><b>What is Acid property?</b></p>
         <blockquote>In order to maintain consistency in a database, before and after the transaction,
-          certain properties are followed. These are called ACID properties.</blockquote>
+          certain properties are followed. These are called ACID properties. <br>Here A stands for Atomicity, C stands for Consistency, I stands for Isolation, D stands for Durability.</blockquote>
         <p><b>Acid properties in DBMS:</b></p>
         <ol>
           <li><span>Atomicity: </span>
             <blockquote>
-              Atomicity is also known as the ‘All or nothing rule’. <br> Each transaction is considered as one unit and
+              - Atomicity is also known as the ‘All or nothing rule’. <br> - Each transaction is considered as one unit and
               either runs to completion or is not
               executed at all.
             </blockquote>
           </li>
           <li><span>Consistency: </span>
             <blockquote>
-              This means that integrity constraints must be maintained so that the database is
+              - This means that integrity constraints must be maintained so that the database is
               consistent before and after the transaction. It refers to the correctness of a
-              database. Referring to the example below, <br>The total amount before and after the transaction must be
+              database. Referring to the example below, <br>- The total amount before and after the transaction must be
               maintained the
               same.
             </blockquote>
