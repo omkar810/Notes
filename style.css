@@ -27,6 +27,7 @@ nav h2{
     font-family: 'Roboto Slab', serif;
 }
 .subject{
+    margin-top: 56px;
     text-align: center;
     box-shadow: 0.1px 8px 18px gold;
     color: rgb(161, 255, 20);
@@ -167,7 +168,7 @@ td,th{
     padding: 7px;
 }
 th{
-    color: rgb(72, 255, 0);
+    color: rgb(59, 209, 0);
 }
 tr > td:first-child{
     color: pink;
@@ -257,4 +258,8 @@ tr > td:first-child{
 .codein-2 br::selection {
     color: white;
     background: green;
+}
+#defines{
+    white-space: nowrap;
+    text-align: center;
 }
