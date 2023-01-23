@@ -942,7 +942,7 @@
             reference:</span><br><code>INSERT INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> );</code>
           <br><span>Syntax to insert multiple rows into the table using column
             reference:</span><br><code>INSERT ALL <br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> )<br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> )<br> INTO table_name ( <i>column_1,column_n</i> ) VALUES (<i>'data_1','data_n'</i> ) <br> SELECT * FROM DUAL;</code><br><strong>NOTE:
-            At a time we can insert maximum three records into the table using INSERT ALL.</strong><br><span>Syntax to make Foreign key: </span><br><code>CONSTRAINT CRN FOREIGN KEY(<i>column_name</i>) REFERENCES table_name1(<i>column_name</i>);</code><br><strong>NOTE: To make foreign key table_name1 should be present in database. The column_name should be same and it should have uniqueness.</strong><br><span>Syntax to copy the records
+            At a time we can insert maximum three records into the table using INSERT ALL.</strong><br><span>Syntax to create Foreign key: </span><br><code>CONSTRAINT CRN FOREIGN KEY(<i>column_name</i>) REFERENCES table_name1(<i>column_name</i>);</code><br><strong>NOTE: To create foreign key table_name1 should be present in database. The column should be key attribute.</strong><br><span>Syntax to copy the records
             from one table to another
             table:</span><br><code>INSERT INTO table_2 VALUES ( SELECT * FROM table_1);</code><br><strong>NOTE:
             Structure must be same of both the tables to copy data from one table to another table. In the syntax data
@@ -1435,6 +1435,9 @@
       <footer class="footer">
         <div class="subject">
           <h3>Thank You!</h3>
+        </div>
+        <div class="b-top">
+          <a class="fa fa-chevron-circle-up" href="#"></a>
         </div>
       </footer>
       <!-- end footer -->
