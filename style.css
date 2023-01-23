@@ -32,6 +32,9 @@ nav h2{
     box-shadow: 0.1px 8px 18px gold;
     color: rgb(161, 255, 20);
 }
+#shn{
+    box-shadow: none;
+}
 .subject h3{
     padding: 10px;
     font-family: 'Roboto Slab', serif;
